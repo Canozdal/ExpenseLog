@@ -64,9 +64,15 @@ namespace ExpenseLog
             {
                 showExpenseListBox.Items.Add(Program.GetExpenses()[i].Date.ToString());
             }
+            label1.Text = Program.CalculateExpenses().ToString();
         }
 
         private void showExpenseListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

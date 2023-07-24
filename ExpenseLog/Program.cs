@@ -49,6 +49,15 @@ namespace ExpenseLog
                 Debug.WriteLine(expenses[i].Description);
             }
         }
+        public static decimal CalculateExpenses()
+        {
+            decimal total = 0;
+            for(int i = 0;i < expenses.Count; i++)
+            {
+                total += expenses[i].Cost;
+            }
+            return total;
+        }
         public static List<Expense> GetExpenses()
         {
             return expenses;
