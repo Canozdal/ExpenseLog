@@ -33,7 +33,7 @@ namespace ExpenseLog
  
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
         public static void addExpense(DateTime time,string category,string Description,decimal Cost)
         {
